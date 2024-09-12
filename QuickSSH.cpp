@@ -207,7 +207,7 @@ int main() {
 
         print_options(listfile, line_count);
 
-        cout << "\n-1 - Quit\n-2 - New SSH Server\n-3 - Delete SSH Server\n-4 - Print Server List File\n\n\nChoose an option: ";
+        cout << "\n-1 - Quit\n-2 - New SSH Server\n-3 - Delete SSH Server\n-4 - Print Server List File\n-5 - Credits\n\n\nChoose an option: ";
 
         if (!(cin >> selector))
         {
@@ -278,6 +278,15 @@ int main() {
             cout << "Servers saved in the List File:\n\n";
             print_list(listfile, line_count);
             cout << "\n\n\nPress Enter to go back.";
+            getchar();
+            getchar();
+            clear_screen();
+            continue;
+        }
+
+        if (selector == -5) {
+            clear_screen();
+            cout << "Credits:\n\n" << ok << "Made for fun by" << title << "\nTony S" << reset << "\n\n\nPress Enter to go back.";
             getchar();
             getchar();
             clear_screen();
