@@ -203,7 +203,7 @@ int main() {
 
         size_t selector = 0;
         clear_screen();
-        cout << title << "QuickSSH Server Selector   -   by Tony S\n" << reset <<"\nSelect the SSH Server:\n\n";
+        cout << title << "QuickSSH Server Selector\n" << reset <<"\nSelect the SSH Server:\n\n";
 
         print_options(listfile, line_count);
 
